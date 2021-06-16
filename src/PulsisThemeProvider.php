@@ -1,5 +1,7 @@
 <?php
 
+namespace Pulsis\Theme;
+
 use Illuminate\Support\ServiceProvider;
 
 class PulsisThemeProvider extends ServiceProvider

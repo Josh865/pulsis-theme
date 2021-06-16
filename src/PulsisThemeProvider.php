@@ -21,8 +21,9 @@ class PulsisThemeProvider extends ServiceProvider
                 '/../resources/views/layout.blade.php' => resource_path(
                     'views/layout.blade.php'
                 ),
+                __DIR__ . '/../public' => public_path('theme'),
             ],
-            'pulsis-theme-layout'
+            'pulsis-theme'
         );
 
         $this->publishes(
@@ -34,11 +35,11 @@ class PulsisThemeProvider extends ServiceProvider
             'pulsis-theme-components'
         );
 
-        $this->publishes(
-            [
-                __DIR__ . '/../public' => public_path('theme'),
-            ],
-            'pulsis-theme-assets'
-        );
+        // $this->publishes(
+        //     [
+        //         __DIR__ . '/../public' => public_path('theme'),
+        //     ],
+        //     'pulsis-theme-assets'
+        // );
     }
 }

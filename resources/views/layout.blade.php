@@ -14,11 +14,11 @@
   <link href="https://use.typekit.net/ghc8hdz.css" rel="stylesheet" />
 
   {{-- Application CSS --}}
-  <link href="{{ asset('vendor/pulsis-theme/css/theme.css') }}" rel="stylesheet" />
+  <link href="{{ asset('theme/css/theme.css') }}" rel="stylesheet" />
   <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
 
   {{-- Application JS --}}
-  <script src="{{ asset('vendor/pulsis-theme/js/theme.js') }}" defer></script>
+  <script src="{{ asset('theme/js/theme.js') }}" defer></script>
   <script src="{{ asset('js/app.js') }}" defer></script>
 
   {{-- Favicons and app icons --}}

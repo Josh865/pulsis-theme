@@ -1,6 +1,6 @@
 <footer class="bg-black">
   <div class="flex justify-center py-10 border-b-2 border-gold-500">
-    <x-purdue-logo class="w-auto h-10 md:h-12"></x-purdue-logo>
+    <x-pulsis-theme::purdue-logo class="w-auto h-10 md:h-12"></x-pulsis-theme::purdue-logo>
   </div>
 
   <div class="container flex flex-col px-6 py-12 md:flex-row">

@@ -3,7 +3,7 @@
     <div class="flex items-center justify-center space-x-2 md:space-x-5 md:justify-start md:flex-row md:text-left">
       <a href="https://www.purdue.edu">
         <span class="sr-only">Purdue University</span>
-        <x-purdue-logo class="w-auto h-6 md:h-10"></x-purdue-logo>
+        <x-pulsis-theme::purdue-logo class="w-auto h-6 md:h-10"></x-pulsis-theme::purdue-logo>
       </a>
       <div class="h-10 md:h-16 w-[2px] bg-gray-400"></div>
       <a

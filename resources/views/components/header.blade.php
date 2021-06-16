@@ -16,7 +16,7 @@
       </a>
     </div>
     <h1 class="hidden text-3xl italic leading-none text-right text-white uppercase md:inline-block md:mt-0 md:text-5xl font-extra-condensed">
-      <a href="{{ route('index') }}">
+      <a href="{{ config('app.url') }}">
         {{ config('app.name') }}
       </a>
     </h1>

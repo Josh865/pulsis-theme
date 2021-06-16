@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   mode: 'jit',
-  prefix: 'theme-',
+  // prefix: 'theme-',
   purge: [
     './resources/**/*.blade.php',
     './resources/**/*.js',

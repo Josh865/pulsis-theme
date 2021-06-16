@@ -36,7 +36,7 @@
       <x-pulsis-theme::header></x-pulsis-theme::header>
 
       <x-pulsis-theme::nav>
-        <x-pulsis-theme::nav-item href="{{ route('index') }}">Home</x-pulsis-theme::nav-item>
+        <x-pulsis-theme::nav-item href="{{ config('app.url') }}">Home</x-pulsis-theme::nav-item>
       </x-pulsis-theme::nav>
 
       <main class="flex-pulsis-theme::1 h-0">

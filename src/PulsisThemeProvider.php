@@ -15,8 +15,11 @@ class PulsisThemeProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'pulsis-theme');
 
-        // $this->publishes([
-        //     __DIR__ . '/../resources/views' => resource_path('views/vendor/pulsis-theme'),
-        // ]);
+        $this->publishes([
+            __DIR__ . '/../resources/views' => resource_path(
+                'views/vendor/pulsis-theme'
+            ),
+            __DIR__ . '/../public' => public_path('vendor/pulsis-theme'),
+        ]);
     }
 }

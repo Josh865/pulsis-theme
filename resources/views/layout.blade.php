@@ -1,16 +1,10 @@
-@props(['title'])
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  @if (!empty($title))
-    <title>{{ $title  }} - {{ config('app.name') }} - Purdue University Libraries and School of Information Studies</title>
-  @else
     <title>{{ config('app.name') }} - Purdue University Libraries and School of Information Studies</title>
-  @endif
 
   <link rel='dns-prefetch' href='//use.typekit.net' />
 
@@ -20,10 +14,12 @@
   <link href="https://use.typekit.net/ghc8hdz.css" rel="stylesheet" />
 
   {{-- Application CSS --}}
-  <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet" />
+  <link href="{{ asset('vendor/pulsis-theme/css/theme.css') }}" rel="stylesheet" />
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
 
   {{-- Application JS --}}
-  <script src="{{ asset(mix('js/app.js')) }}" defer></script>
+  <script src="{{ asset('vendor/pulsis-theme/js/theme.js') }}" defer></script>
+  <script src="{{ asset('js/app.js') }}" defer></script>
 
   {{-- Favicons and app icons --}}
   <link href="https://www.purdue.edu/purdue/images/favicon.ico" rel="shortcut icon">
@@ -37,17 +33,17 @@
 </head>
   <body class="font-sans text-base antialiased text-gray-800 bg-gray-100">
     <div id="app" class="flex flex-col min-h-screen">
-      <x-header></x-header>
+      <x-pulsis-theme::header></x-pulsis-theme::header>
 
-      <x-nav>
-        <x-nav-item href="{{ route('index') }}">Home</x-nav-item>
-      </x-nav>
+      <x-pulsis-theme::nav>
+        <x-pulsis-theme::nav-item href="{{ route('index') }}">Home</x-pulsis-theme::nav-item>
+      </x-pulsis-theme::nav>
 
-      <main class="flex-1 h-0">
-        {{ $slot }}
+      <main class="flex-pulsis-theme::1 h-0">
+        @yield('content')
       </main>
 
-      <x-footer></x-footer>
+      <x-pulsis-theme::footer></x-pulsis-theme::footer>
     </div>
   </body>
 </html>

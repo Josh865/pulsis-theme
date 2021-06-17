@@ -1,22 +1,22 @@
 @props(['href' => ''])
 
 {{-- Mobile nav item --}}
-<li class="md:hidden">
-  <a href="{{ $href }}" class="block py-2">
-    <span class="tracking-tight text-gray-300 uppercase {{ url()->current() === $href ? 'font-bold text-white' : 'font-medium' }}">
+<li class="md:pulsis-hidden">
+  <a href="{{ $href }}" class="py-2 pulsis-block">
+    <span class="pulsis-tracking-tight pulsis-text-gray-300 pulsis-uppercase {{ url()->current() === $href ? 'pulsis-font-bold pulsis-text-white' : 'pulsis-font-medium' }}">
       {{ $slot }}
     </span>
   </a>
 </li>
 
 {{-- Desktop nav item --}}
-<li class="hidden md:block">
-  <a href="{{ $href }}" class="block group">
-    <span class="font-medium tracking-tight text-gray-800 uppercase group-hover:text-gold-700">
+<li class="pulsis-hidden md:pulsis-block">
+  <a href="{{ $href }}" class="pulsis-block pulsis-group">
+    <span class="pulsis-font-medium pulsis-tracking-tight pulsis-text-gray-800 pulsis-uppercase group-hover:pulsis-text-gold-700">
       {{ $slot }}
     </span>
 
     {{-- Animated underline --}}
-    <div class="h-[2px] w-full bg-gold-700 transform group-hover:scale-100 transition duration-200 {{ url()->current() === $href ? 'scale-100' : 'scale-0' }}"></div>
+    <div class="pulsis-h-[2px] pulsis-w-full pulsis-bg-gold-700 pulsis-transform group-hover:pulsis-scale-100 pulsis-transition pulsis-duration-200 {{ url()->current() === $href ? 'pulsis-scale-100' : 'pulsis-scale-0' }}"></div>
   </a>
 </li>

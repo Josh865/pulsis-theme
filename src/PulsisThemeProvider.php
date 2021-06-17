@@ -21,6 +21,10 @@ class PulsisThemeProvider extends ServiceProvider
                 '/../resources/views/layout.blade.php' => resource_path(
                     'views/layout.blade.php'
                 ),
+                __DIR__ .
+                '/../resources/views/welcome.blade.php' => resource_path(
+                    'views/welcome.blade.php'
+                ),
                 __DIR__ . '/../public' => public_path('theme'),
             ],
             'pulsis-theme'

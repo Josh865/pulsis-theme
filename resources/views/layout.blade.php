@@ -8,17 +8,16 @@
 
   <link rel='dns-prefetch' href='//use.typekit.net' />
 
-  {{-- <link rel="preload" href="{{ asset('fonts/UnitedSansRgMd.woff2') }}" as="font" type="font/woff2" crossorigin="anonymous"> --}}
-
-  {{-- Acumin Pro and Source Serif Pro brand fonts. --}}
+  {{-- Brand fonts: Acumin Pro, Source Serif, and United Sans --}}
   <link href="https://use.typekit.net/ghc8hdz.css" rel="stylesheet" />
+  <link href="https://www.purdue.edu/purdue/fonts/united-sans/united-sans.css" rel="stylesheet" />
 
-  {{-- Application CSS --}}
+  {{-- Theme assets. DO NOT MODIFY. --}}
   <link href="{{ asset('theme/css/theme.css') }}" rel="stylesheet" />
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-
-  {{-- Application JS --}}
   <script src="{{ asset('theme/js/theme.js') }}" defer></script>
+
+  {{-- Application assets. Feel free to modify. --}}
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
   <script src="{{ asset('js/app.js') }}" defer></script>
 
   {{-- Favicons and app icons --}}
@@ -27,19 +26,17 @@
   <link href="https://www.purdue.edu/purdue/images/icon-ipad.png" rel="apple-touch-icon" sizes="76x76">
   <link href="https://www.purdue.edu/purdue/images/icon-iphone-retina.png" rel="apple-touch-icon" sizes="120x120">
   <link href="https://www.purdue.edu/purdue/images/icon-ipad-retina.png" rel="apple-touch-icon" sizes="152x152">
-
-  {{-- Alpine.js --}}
-  <script src="https://unpkg.com/alpinejs@3.0.5/dist/cdn.min.js" defer></script>
 </head>
-  <body class="font-sans text-base antialiased text-gray-800 bg-gray-100">
-    <div id="app" class="flex flex-col min-h-screen">
+  <body class="pulsis-font-sans pulsis-antialiased pulsis-text-gray-800 pulsis-bg-gray-100">
+    <div id="app" class="pulsis-flex pulsis-flex-col pulsis-min-h-screen">
       <x-pulsis-theme::header></x-pulsis-theme::header>
 
       <x-pulsis-theme::nav>
         <x-pulsis-theme::nav-item href="{{ config('app.url') }}">Home</x-pulsis-theme::nav-item>
+        {{-- Add your nav links here --}}
       </x-pulsis-theme::nav>
 
-      <main class="flex-1 h-0">
+      <main class="pulsis-flex-1 pulsis-h-0">
         @yield('content')
       </main>
 

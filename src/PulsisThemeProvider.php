@@ -38,12 +38,5 @@ class PulsisThemeProvider extends ServiceProvider
             ],
             'pulsis-theme-components'
         );
-
-        // $this->publishes(
-        //     [
-        //         __DIR__ . '/../public' => public_path('theme'),
-        //     ],
-        //     'pulsis-theme-assets'
-        // );
     }
 }
